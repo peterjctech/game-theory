@@ -1,0 +1,31 @@
+@use "colors";
+@use "fonts";
+
+.logo {
+    border: solid white 5px;
+    outline: solid black 1px;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+    h1 {
+        font-family: fonts.$display;
+        font-size: 3.2rem;
+    }
+
+    &__g {
+        color: white;
+        position: absolute;
+        top: -1rem;
+        left: 0.5rem;
+    }
+    &__t {
+        color: colors.$primary-4;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+        position: absolute;
+        right: 1rem;
+        bottom: -0.8rem;
+    }
+}

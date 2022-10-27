@@ -1,0 +1,16 @@
+$default: "Montserrat";
+$display: "PermanentMarker";
+$writing: "FuzzyBubbles";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat.ttf");
+}
+@font-face {
+    font-family: "FuzzyBubbles";
+    src: url("../assets/fonts/FuzzyBubbles.ttf");
+}
+@font-face {
+    font-family: "PermanentMarker";
+    src: url("../assets/fonts/PermanentMarker.ttf");
+}
