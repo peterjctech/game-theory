@@ -1,0 +1,18 @@
+<div class="gtc-board">
+    <div *ngIf="service.message" class="gtc-message">{{ service.message }}</div>
+    <div *ngFor="let row of service.board" class="gtc-board__row">
+        <div class="gtc-board__guess">
+            <div *ngFor="let piece of row.guess" [class]="'gtc-board__piece ' + piece"></div>
+        </div>
+        <div class="gtc-board__results">
+            <div [class]="'gtc-board__pegs ' + calcClassName()">
+                <div *ngFor="let item of [].constructor(row.black)" class="gtc-board__peg black"></div>
+                <div *ngFor="let item of [].constructor(row.white)" class="gtc-board__peg white"></div>
+                <div
+                    *ngFor="let item of [].constructor(row.guess.length - row.white - row.black)"
+                    class="gtc-board__peg blank"
+                ></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<section>
+    <div>
+        <h6>Number of Colors</h6>
+        <mat-select [(value)]="colorCount">
+            <mat-option *ngFor="let item of [].constructor(12); index as j" [value]="j + 1">
+                {{ j + 1 }}
+            </mat-option>
+        </mat-select>
+    </div>
+    <div>
+        <h6>Length of Code</h6>
+        <mat-select [(value)]="codeLength">
+            <mat-option *ngFor="let item of [].constructor(12); index as j" [value]="j + 1">
+                {{ j + 1 }}
+            </mat-option>
+        </mat-select>
+    </div>
+    <div>
+        <mat-checkbox [(ngModel)]="disableEmpty" color="primary">Require Full Selection</mat-checkbox>
+    </div>
+    <button mat-raised-button color="warn" (click)="update()">Update / Restart Game</button>
+</section>

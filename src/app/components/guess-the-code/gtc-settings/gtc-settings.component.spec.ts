@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArithmeticGameComponent } from './arithmetic-game.component';
+import { GtcSettingsComponent } from './gtc-settings.component';
 
-describe('ArithmeticGameComponent', () => {
-  let component: ArithmeticGameComponent;
-  let fixture: ComponentFixture<ArithmeticGameComponent>;
+describe('GtcSettingsComponent', () => {
+  let component: GtcSettingsComponent;
+  let fixture: ComponentFixture<GtcSettingsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ArithmeticGameComponent ]
+      declarations: [ GtcSettingsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ArithmeticGameComponent);
+    fixture = TestBed.createComponent(GtcSettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

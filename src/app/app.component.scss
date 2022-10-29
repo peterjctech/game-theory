@@ -1,9 +1,0 @@
-@use "colors";
-
-main {
-    position: relative;
-    top: 6rem;
-    padding-bottom: 6rem;
-    min-height: calc(100vh - 11rem);
-    background-color: colors.$light;
-}

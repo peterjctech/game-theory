@@ -1,0 +1,19 @@
+<div class="gtc-select">
+    <section>
+        <mat-select
+            *ngFor="let item of [].constructor(service.settings.codeLength); index as i"
+            [(value)]="service.selection[i]"
+        >
+            <mat-option *ngIf="!service.settings.disableEmpty" [value]="''"> </mat-option>
+            <mat-option
+                *ngFor="let item of [].constructor(service.settings.colorCount); index as j"
+                [value]="service.colors[j]"
+            >
+                {{ service.colors[j] }}
+            </mat-option>
+        </mat-select>
+    </section>
+    <div>
+        <button (click)="service.makeGuess()" mat-raised-button color="primary">Guess</button>
+    </div>
+</div>

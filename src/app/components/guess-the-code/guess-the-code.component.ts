@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { GuessTheCodeService } from "services";
 
 @Component({
-  selector: 'app-guess-the-code',
-  templateUrl: './guess-the-code.component.html',
-  styleUrls: ['./guess-the-code.component.scss']
+    selector: "app-guess-the-code",
+    templateUrl: "./guess-the-code.component.html",
+    styleUrls: ["./guess-the-code.component.scss"],
 })
 export class GuessTheCodeComponent implements OnInit {
+    constructor(private service: GuessTheCodeService) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {
+        this.service.startGame();
+    }
 }

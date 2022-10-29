@@ -1,0 +1,12 @@
+<main>
+    <h6 class="top-right">Score: {{ score }}</h6>
+    <h6 class="top-left">Time Left: {{ timeLeft }}</h6>
+    <h6 class="top-center">{{ equation.difficulty }}</h6>
+    <section>
+        <p>{{ equation.directions }}</p>
+        <h5>{{ equation.problem }}</h5>
+        <h5 *ngIf="finalScore" class="final-score">You scored: {{ finalScore }}</h5>
+        <button *ngIf="!isStarted" mat-raised-button color="primary" (click)="startGame()">Start Game</button>
+        <input type="text" [ngModel]="input" (ngModelChange)="handleChange($event)" />
+    </section>
+</main>

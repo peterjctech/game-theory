@@ -12,8 +12,17 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    position: relative;
+    top: 6rem;
+    padding-bottom: 6rem;
+    min-height: calc(100vh - 11rem);
+    background-color: colors.$light;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
+    height: 4px;
 }
 
 ::-webkit-scrollbar-track {

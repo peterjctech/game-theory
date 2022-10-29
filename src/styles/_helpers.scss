@@ -1,0 +1,16 @@
+.top-left {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.top-center {
+    position: absolute;
+    top: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+.top-right {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
