@@ -46,7 +46,6 @@ export class GuessTheCodeService {
     };
 
     makeGuess = () => {
-        console.log(this.selection);
         const x = this.guessCode(this.selection);
         this.board.push(JSON.parse(JSON.stringify(x)));
         if (x.black === this.settings.codeLength) {
@@ -69,7 +68,6 @@ export class GuessTheCodeService {
     };
 
     guessCode = (guess: string[]) => {
-        console.log(this.settings);
         let black = 0;
         let white = 0;
         const guessMap = new Map();
@@ -92,13 +90,7 @@ export class GuessTheCodeService {
             white += Math.min(val, codeMap.get(key) || 0);
         });
 
-        console.log(guess);
-
-        return {
-            guess,
-            black,
-            white,
-        };
+        return { guess, black, white };
     };
 
     constructor() {}

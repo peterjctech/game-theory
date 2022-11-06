@@ -1,0 +1,51 @@
+<div *ngIf="service.phase === 1" class="settings">
+    <h6>Variant</h6>
+    <mat-select [(value)]="service.settings.variant">
+        <mat-option value="Normal">Normal</mat-option>
+        <mat-option value="Speed">Speed</mat-option>
+        <mat-option value="Dynamic">Dynamic</mat-option>
+        <mat-option value="Abstract">Abstract</mat-option>
+        <mat-option value="Tetris">Tetris</mat-option>
+        <mat-option value="Precision">Precision</mat-option>
+        <mat-option value="Mines">Mines</mat-option>
+        <mat-option value="Ocean">Ocean</mat-option>
+    </mat-select>
+    <h6>Difficulty</h6>
+    <mat-select [(value)]="service.settings.difficulty">
+        <mat-option value="Easy">Easy</mat-option>
+        <mat-option value="Medium">Medium</mat-option>
+        <mat-option value="Hard">Hard</mat-option>
+    </mat-select>
+    <h6>Grid Size</h6>
+    <mat-select [(value)]="service.settings.gridSize">
+        <mat-option *ngFor="let item of [].constructor(12); index as j" [value]="j + 5">{{ j + 5 }}</mat-option>
+    </mat-select>
+    <footer>
+        <button (click)="service.initializeGrid()" mat-raised-button color="primary">Submit</button>
+        <button (click)="quickStart()" mat-raised-button color="accent">Quick Start</button>
+    </footer>
+</div>
+<div *ngIf="service.phase === 2" class="settings">
+    <button mat-raised-button color="primary">Phase 2</button>
+</div>
+<div *ngIf="service.phase === 3" class="settings">
+    <button mat-raised-button color="primary">Phase 3</button>
+</div>
+<div *ngIf="service.phase === 4" class="settings">
+    <h1>Select {{ service.guessCount }} {{ service.guessCount === 1 ? "square" : "squares" }}</h1>
+    <p>
+        Controls: Left click on a square to select it. Right click on a square to mark/unmark it as a guess. Press Enter
+        or Spacebar to submit your guess. Press X to unmark all guesses.
+    </p>
+    <p>
+        Pressing Q, W, E, R, and T will change the color of the selected square to purple, grey, blue, and red, and
+        black respectively.
+    </p>
+    <h3>Recommended Use:</h3>
+    <p>T to remove the current mark</p>
+    <p>R for 'Hit'</p>
+    <p>E for 'Miss'</p>
+    <p>W for 'Sunk'</p>
+    <p>Q as a general purpose mark</p>
+    <button mat-raised-button color="primary">Phase 4</button>
+</div>

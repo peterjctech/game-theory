@@ -1,1 +1,53 @@
-<p>battleship works!</p>
+<main>
+    <div class="grid">
+        <div class="grid__numbers">
+            <div *ngFor="let space of service.grid.numbers">
+                <p>{{ space }}</p>
+            </div>
+        </div>
+        <div class="grid__letters">
+            <div *ngFor="let space of service.grid.letters">
+                <p>{{ space }}</p>
+            </div>
+        </div>
+        <section>
+            <div *ngFor="let row of service.grid.enemy.boats; let i = index">
+                <div
+                    *ngFor="let space of row; let j = index"
+                    [ngClass]="getEnemySquareClass(i, j)"
+                    (click)="service.handleLeftClick(i, j)"
+                    (contextmenu)="service.handleRightClick($event, i, j)"
+                >
+                    <figure [ngClass]="space[1]"></figure>
+                </div>
+            </div>
+        </section>
+        <h6>Enemy Fleet</h6>
+    </div>
+    <div class="grid">
+        <div class="grid__numbers">
+            <div *ngFor="let space of service.grid.numbers">
+                <p>{{ space }}</p>
+            </div>
+        </div>
+        <div class="grid__letters">
+            <div *ngFor="let space of service.grid.letters">
+                <p>{{ space }}</p>
+            </div>
+        </div>
+        <section>
+            <div *ngFor="let row of service.grid.ally.boats; let i = index">
+                <div *ngFor="let space of row; let j = index" class="grid__space">
+                    <figure [ngClass]="space[1]"></figure>
+                </div>
+            </div>
+        </section>
+        <h6>Your Fleet</h6>
+    </div>
+    <aside>
+        <app-battleship-settings></app-battleship-settings>
+    </aside>
+    <footer>
+        <p>{{ service.message }}</p>
+    </footer>
+</main>

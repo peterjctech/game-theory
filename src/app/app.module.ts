@@ -14,7 +14,6 @@ import { SudokuComponent } from "./components/sudoku/sudoku.component";
 import { LogoComponent } from "./components/shared/logo/logo.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { PokerComponent } from "./components/poker/poker.component";
-import { BattleshipComponent } from "./components/battleship/battleship.component";
 import { SolitaireComponent } from "./components/solitaire/solitaire.component";
 import { ChessComponent } from "./components/chess/chess.component";
 import { GuessTheCodeComponent } from "./components/guess-the-code/guess-the-code.component";
@@ -23,6 +22,8 @@ import { MathGameComponent } from "./components/math-game/math-game.component";
 import { GtcSettingsComponent } from "./components/guess-the-code/gtc-settings/gtc-settings.component";
 import { GtcBoardComponent } from "./components/guess-the-code/gtc-board/gtc-board.component";
 import { GtcSelectComponent } from "./components/guess-the-code/gtc-select/gtc-select.component";
+import { BattleshipComponent } from './components/battleship/battleship.component';
+import { BattleshipSettingsComponent } from './components/battleship/battleship-settings/battleship-settings.component';
 
 @NgModule({
     declarations: [
@@ -33,7 +34,6 @@ import { GtcSelectComponent } from "./components/guess-the-code/gtc-select/gtc-s
         SudokuComponent,
         LogoComponent,
         PokerComponent,
-        BattleshipComponent,
         SolitaireComponent,
         ChessComponent,
         GuessTheCodeComponent,
@@ -42,6 +42,8 @@ import { GtcSelectComponent } from "./components/guess-the-code/gtc-select/gtc-s
         GtcSettingsComponent,
         GtcBoardComponent,
         GtcSelectComponent,
+        BattleshipComponent,
+        BattleshipSettingsComponent,
     ],
     imports: [
         BrowserModule,

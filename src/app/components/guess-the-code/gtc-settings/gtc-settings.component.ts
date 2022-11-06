@@ -12,7 +12,6 @@ export class GtcSettingsComponent implements OnInit {
     disableEmpty = false;
 
     update = () => {
-        console.log(this.disableEmpty);
         this.service.updateSettings({ color: this.colorCount, code: this.codeLength, empty: this.disableEmpty });
     };
 
