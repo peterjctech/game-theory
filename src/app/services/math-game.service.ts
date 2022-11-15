@@ -1,7 +1,7 @@
+import { Injectable } from "@angular/core";
 import * as dayjs from "dayjs";
 import * as advancedFormat from "dayjs/plugin/advancedFormat";
 dayjs.extend(advancedFormat);
-import { Injectable } from "@angular/core";
 import { mathConfig, randomInteger } from "utils";
 
 @Injectable({

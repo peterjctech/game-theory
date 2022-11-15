@@ -1,5 +1,4 @@
-@use "colors";
-@use "fonts";
+@import "src/styles/variables";
 
 .logo {
     border: solid white 5px;
@@ -11,7 +10,7 @@
     cursor: pointer;
 
     h1 {
-        font-family: fonts.$display;
+        font-family: $display;
         font-size: 3.2rem;
     }
 
@@ -22,7 +21,7 @@
         left: 0.5rem;
     }
     &__t {
-        color: colors.$primary-4;
+        color: $primary-4;
         text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
         position: absolute;
         right: 1rem;

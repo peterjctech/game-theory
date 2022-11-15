@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { BattleshipVariant, BoatArray } from "../types/battleshipTypes";
 
 @Injectable({
     providedIn: "root",

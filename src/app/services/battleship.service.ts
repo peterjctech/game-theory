@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
-import { BattleshipGrid, BattleshipSettings } from "../types/battleshipTypes";
 import { BattleshipHelpersService } from "./battleship-helpers.service";
+import { BattleshipGrid, BattleshipSettings } from "types";
 
 @Injectable({
     providedIn: "root",

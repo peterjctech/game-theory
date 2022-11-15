@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RulesComponent } from './rules.component';
+import { ReversiComponent } from './reversi.component';
 
-describe('RulesComponent', () => {
-  let component: RulesComponent;
-  let fixture: ComponentFixture<RulesComponent>;
+describe('ReversiComponent', () => {
+  let component: ReversiComponent;
+  let fixture: ComponentFixture<ReversiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RulesComponent ]
+      declarations: [ ReversiComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RulesComponent);
+    fixture = TestBed.createComponent(ReversiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

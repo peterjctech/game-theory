@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { MathGameService } from "services";
-
 @Component({
     selector: "app-math-game",
     templateUrl: "./math-game.component.html",

@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { GuessTheCodeService } from "services";
-import { GuessTheCodeComponent } from "../guess-the-code.component";
 
 @Component({
     selector: "app-gtc-select",

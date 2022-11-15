@@ -1,7 +1,7 @@
-@use "colors";
+@import "src/styles/variables";
 
 footer {
-    background-color: colors.$primary-2;
+    background-color: $primary-2;
     height: 5rem;
     width: 100vw;
     position: fixed;

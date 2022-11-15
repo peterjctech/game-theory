@@ -1,12 +1,10 @@
-@use "fonts";
-@use "colors";
+@import "src/styles/variables";
 
 .navbar {
     width: 100vw;
-    background-color: pink;
     position: fixed;
     height: 6rem;
-    background-color: colors.$primary-1;
+    background-color: $primary-1;
     display: flex;
     place-items: center;
     padding: 0.25rem;
